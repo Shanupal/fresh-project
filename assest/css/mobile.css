@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-image: url(/assest/Images/bodybackground.png);
+    background-position: center;
+    background-size: cover;
+    /* background-color: yellow; */
+    background-attachment: fixed;
+}
+
+.nav-logo {
+  height: 60px;
+}
+.logo a{
+  display: flex;
+  align-items: center;
+}
+
+nav{
+    /* position: fixed; */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    /* background: #fcfcfc33; */
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgb(186, 204, 211);
+
+   }
+   nav .navbar{
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    height: 100%;
+    max-width: 90%;
+    margin: auto;
+    margin-right: 100px;
+   }
+   nav .navbar .logo a{
+     color: #fff;
+     font-size: 27px;
+     font-weight: 600;
+     text-decoration: none;
+
+     
+   }
+   nav .navbar .menu{
+     display: flex;
+   }
+   .navbar .menu li{
+     list-style: none;
+     margin: 0 15px;
+     margin-right: 45px;
+   }
+   .navbar .menu li a{
+     color: black;
+     font-size: 1.25rem;
+     font-weight: 500;
+     text-decoration: none;
+     transition: background-color 0.3s ease, color 0.3s ease;
+     font-family: "Poppins", sans-serif;
+     &:hover {
+        color: rgb(0, 17, 255);
+        
+     }
+   }
+   .dropdown{
+    display: none;
+    text-align: center;
+   }
+ul li:hover .dropdown{
+  font-size: 5px;
+  width: 30%;
+  display: block;
+  position: absolute;
+  background-color: rgb(228, 248, 245);
+}
+.dropdown li{
+  padding: 3px;
+}
+#dropdowns{
+    width: 14%;
+    text-align: center;
+}
+.dropdown ul{
+  margin: 0;
+  padding: 0;
+}
+.dropdown ul li{
+  display: block;
+}
+
+.dropdown2{
+    display: none;
+}
+
+.dropdown2 li{
+  width: 100%;
+  background-color: rgb(173, 238, 228);
+}
+
+.dropdown ul li:hover .dropdown2{
+    display: block;
+    position: absolute;
+    margin-left: 3.5cm;
+    margin-top: -0.87cm;
+    background-color: rgb(173, 238, 228);
+}
+
+.dropdowns hr{
+  width: 100%;
+}
+
+.enterprices-solution {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "poppins";
+  margin-top: 100px;
+ }
+
+ .content-1 {
+  height: 400px;
+  width: 600px;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.103);
+  color: black;
+  border-radius: 20px 0 0 20px;
+  padding: 20px;
+  display: inline;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+ }
+ 
+ .content-1 p{
+  margin-top: 20px;
+  color: rgb(29, 28, 28);
+  font-weight: 900;
+  font-size: 20px;
+ }
+
+ a{
+  text-decoration: none;
+ }
+
+ .head{
+  text-align: center;
+  margin-top:100px;
+  color: rgb(196, 190, 190);
+ }
+.head h1{
+margin-top: 40px;
+  color: blue;
+  font-size: 40px;
+  text-align: center;
+}   
+
+.head p{
+  margin: 4%;
+  font-size: 20px;
+  color: black;
+  font-size: 1.5rem;
+}
+
+
+
+.details{
+margin: 4%;
+display: flex;
+align-items: center;
+justify-content: space-around;
+color: rgb(196, 190, 190);
+}
+
+.details h1{
+color: black;
+font-size: 30px;
+margin-left: 25px;
+}
+.details p{
+color: rgb(39, 38, 38);
+margin: 4%;
+font-size: 20px;
+}
+
+
+.details div{
+padding: 12px;
+border: 2px solid gray;
+width: 50%;
+border-radius: 10px;
+margin-bottom: 40px;
+}
+
+.content-img img{
+  height: 450px;
+  width: 550px;
+}
+
+/* fourth section  */
+
+/* contact us form  */
+.contact{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: ; */
+}
+.contact img{
+  height: 450px;
+  width: 500px;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+.contact h3{
+  width: 80%;
+  margin: 20px;
+  margin-left: 50px;
+}
+
+form{
+  width: 50%;
+  margin-right: 100px;
+}
+form .container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+form div,input,textarea{
+  width: 100%;
+}
+form div{
+  /* margin: 20px; */
+  display: flex;
+  flex-direction: column;
+}
+form h1{
+  text-align: center;
+}
+
+form label,input,textarea{
+  font-weight: 700;
+  padding: 1.75%;
+  border-radius: 8px;
+}
+form button{
+  width: 100%;
+  padding: 1.75%;
+  margin-top: 20px;
+  background-color: blue;
+  border-radius: 10px;
+  border: 2px solid black;
+  color: white;
+  font-size: 20px;
+}
+
+
+@media screen and (max-width: 600px){
+  .contact-form{
+    flex-direction: column;
+  }
+  .msg textarea{
+    height: 80px;
+  }
+  .input-fields,
+  .msg{
+    width: 100%;
+  }
+}

@@ -1,0 +1,336 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100vh;
+    width: 100%;
+    background-image: url(/assest/Images/bodybackground.png);
+    background-position: center;
+    background-size: cover;
+    /* background-color: yellow; */
+    background-attachment: fixed;
+  }
+  
+  .nav-logo {
+  height: 60px;
+  }
+  .logo a{
+    display: flex;
+    align-items: center;
+  }
+  nav{
+    /* position: fixed; */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    /* background: #fcfcfc33; */
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgb(186, 204, 211);
+  
+   }
+   nav .navbar{
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    height: 100%;
+    max-width: 90%;
+    margin: auto;
+    margin-right: 100px;
+   }
+   nav .navbar .logo a{
+     color: #fff;
+     font-size: 27px;
+     font-weight: 600;
+     text-decoration: none;
+  
+     
+   }
+   nav .navbar .menu{
+     display: flex;
+   }
+   .navbar .menu li{
+     list-style: none;
+     margin: 0 15px;
+     margin-right: 45px;
+   }
+   .navbar .menu li a{
+     color: black;
+     font-size: 1.25rem;
+     font-weight: 500;
+     text-decoration: none;
+     transition: background-color 0.3s ease, color 0.3s ease;
+     font-family: "Poppins", sans-serif;
+     &:hover {
+        color: rgb(0, 17, 255);
+        
+     }
+   }
+   .dropdown{
+    display: none;
+    text-align: center;
+   }
+  ul li:hover .dropdown{
+  font-size: 5px;
+  width: 30%;
+  display: block;
+  position: absolute;
+  background-color: rgb(228, 248, 245);
+  }
+  .dropdown li{
+  padding: 3px;
+  }
+  #dropdowns{
+    width: 15%;
+  }
+  .dropdowns hr{
+    width: 70%;
+  }
+  .dropdown ul{
+  margin: 0;
+  padding: 0;
+  }
+  .dropdown ul li{
+  display: block;
+  }
+  
+  .dropdown2{
+    display: none;
+    /* width: 100%; */
+  }
+  .dropdown2 li{
+    width: 100%;
+    background-color: rgb(173, 238, 228);
+  }
+  
+  .dropdown ul li:hover .dropdown2{
+    display: block;
+    position: absolute;
+    margin-left: 3.5cm;
+    margin-top: -0.87cm;
+    background-color: rgb(173, 238, 228);
+  }
+
+  .about-us-main-content {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    /* margin-top: 100px; */
+  }
+  
+  .about-us-content {
+    height: 400px;
+    width: 50%;
+    margin: 20px;
+    margin-top: 60px;
+    /* backdrop-filter: blur(16px) saturate(180%); */
+   /* -webkit-backdrop-filter: blur(16px) saturate(180%); */
+    background-color: rgba(255, 255, 255, 0.103);
+    padding: 20px;
+    border-radius: 20px 0 0 20px;
+    -webkit-border-radius: 20px 0 0 20px;
+    -moz-border-radius: 20px 0 0 20px;
+    -ms-border-radius: 20px 0 0 20px;
+    -o-border-radius: 20px 0 0 20px;
+}
+  
+  .about-us-content h1 {
+    color: black;
+    font-family: "poppins";
+    font-size: 2.5rem;
+  }
+
+  .about-us-content p {
+    color: black;
+    font-family: "poppins";
+    line-height: 30px;
+    font-size: 1.5rem;
+    /* margin-top: 10px; */
+  }
+
+  .hero {
+    background-image: url('/assest/Images/testing.png');
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 50px;
+    height: auto;
+    height: 400px;
+    /* width: 99%; */
+}
+
+.hero h1 {
+    padding: 100px 0px 0px 100px;
+    font-size: 50px;
+    color: #ffff;
+    margin: auto;
+}
+
+.content-2 {
+  height: 100vh;
+  width: 100%;
+  /* background-color: black; */
+}
+
+
+.abt-box-1 {
+  height: 650px;
+  width: 550px;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  /* background-color: rgba(255, 255, 255, 0.103); */
+  border-radius: 10px 0 0 10px;
+  -webkit-border-radius: 10px 0 0 10px;
+  -moz-border-radius: 10px 0 0 10px;
+  -ms-border-radius: 10px 0 0 10px;
+  -o-border-radius: 10px 0 0 10px;
+  border: 2px solid rgb(100, 100, 100);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.abt-box-2 {
+  height: 650px;
+  width: 550px;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  /* background-color: rgba(255, 255, 255, 0.103); */
+  border-radius: 0 10px 10px 0;
+  -webkit-border-radius: 0 10px 10px 0;
+  -moz-border-radius: 0 10px 10px 0;
+  -ms-border-radius: 0 10px 10px 0;
+  -o-border-radius: 0 10px 10px 0;
+  border: 2px solid rgb(100, 100, 100);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.main-content-abt-boxes {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "poppins";
+}
+
+.abt-box-1 h1 {
+  text-align: center;
+  font-weight: 900;
+  color: blue;
+  font-size:2rem;
+}
+
+.abt-box-1 p {
+  margin-top: 30px;
+  color: black;
+  text-align: left;
+  line-height: 30px;
+  font-size: 20px;
+}
+
+.abt-box-2 h1 {
+  text-align: center;
+  font-weight: 900;
+  color: blue;
+  font-size:2rem;
+}
+
+.abt-box-2 p {
+  margin-top: 30px;
+  color: black;
+  text-align: left;
+  line-height: 30px;
+  font-size: 20px;
+}
+
+
+/* scroll bar  */
+
+body::-webkit-scrollbar {
+  width: 0.50rem;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 0, 140);
+  /* outline: 1px solid slategrey; */
+}
+
+/* contact us form  */
+.contact{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 100px;
+  /* justify-content: ; */
+}
+.contact img{
+  height: 450px;
+  width: 500px;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+.contact h3{
+  width: 80%;
+  margin: 20px;
+  margin-left: 50px;
+}
+
+form{
+  width: 50%;
+  margin-right: 100px;
+}
+form .container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+form div,input,textarea{
+  width: 100%;
+}
+form div{
+  /* margin: 20px; */
+  display: flex;
+  flex-direction: column;
+}
+form h1{
+  text-align: center;
+}
+
+form label,input,textarea{
+  font-weight: 700;
+  padding: 1.75%;
+  border-radius: 8px;
+}
+form button{
+  width: 100%;
+  padding: 1.75%;
+  margin-top: 20px;
+  background-color: blue;
+  border-radius: 10px;
+  border: 2px solid black;
+  color: white;
+  font-size: 20px;
+}
+
+
+@media screen and (max-width: 600px){
+  .contact-form{
+    flex-direction: column;
+  }
+  .msg textarea{
+    height: 80px;
+  }
+  .input-fields,
+  .msg{
+    width: 100%;
+  }
+}

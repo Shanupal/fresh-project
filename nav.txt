@@ -1,0 +1,16 @@
+<div class="card">
+           <img alt="Person using a laptop and a smartphone" class="zoom-hover" height="400" src="https://storage.googleapis.com/a1aa/image/6V8RRhafernbP0GHb6Gp3lGDiYaB4gQtiebNmZIkLueWrF6OB.jpg" width="600"/>
+           
+           <div class="card-content">
+            <h3>
+             WEB APPLICATION DEVELOPMENT
+            </h3>
+            <div class="underline">
+            </div>
+            <a href="/service/webdev.html">
+             READ MORE
+             <i class="fas fa-arrow-right">
+             </i>
+            </a>
+           </div>
+          </div>
